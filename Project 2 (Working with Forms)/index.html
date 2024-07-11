@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return fsubmit()">
+        Your email please: <input type="email" id="input" onfocus="onFun()" onblur="onOf()" onselect="selectFun()">
+        <input type="submit" id="ok">
+    </form>
+
+    <script>
+        function onFun() {
+            document.getElementById("input").style.background = 'red';
+        }
+
+        function onOf() {
+            document.getElementById("input").style.background = 'yellow';
+        }
+
+        function fsubmit() {
+            alert(`${input.value}`);
+        }
+
+        function selectFun() {
+            alert("You selected something");
+        }
+    </script>
+</body>
+</html>
